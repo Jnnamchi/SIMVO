@@ -25,8 +25,8 @@
 </html>
 ```
 
-- **Add Basic Styling**  
-  Copy & place the following style block in between the `</body>` and `</html>` tags of your `website.html` file:
+- **Add Core Element Styling**  
+  Add the following style block in between the `</body>` and `</html>` tags of your `website.html` file:
 
 ```html
 <style>
@@ -59,7 +59,7 @@
 ```
 
 - **Add Class & ID targeted Styling**  
-  Add the following style definitions inside the bottom of the `<style>` block in `website.html`, directly under the `.section-content` definition:
+  Add the following style definitions **inside** the bottom of the `<style>` block in `website.html`, directly under the `.section-content` definition:
 
 ```css
   /* Class & ID targeted styling */
