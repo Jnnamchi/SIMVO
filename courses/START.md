@@ -1,10 +1,10 @@
 ## Getting Started
 
-- [ ] **Download VS Code**  
+- **Download VS Code**  
   Download and install Visual Studio Code from:  
   https://code.visualstudio.com/download
 
-- [ ] **Create your HTML file**  
+- **Create your HTML file**  
   Create a new file called `website.html`, then copy and paste the following contents into it:
 
 ```html
