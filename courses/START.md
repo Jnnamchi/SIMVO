@@ -89,7 +89,7 @@
 - **Add JavaScript**  
   Add the following `<script>` in between the `</style>` and `</html>` tags of your `website.html` file:
 
-```js
+```html
 <script>
     function generateRandomBackground() {
         message = "Hello!"
