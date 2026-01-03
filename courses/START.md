@@ -1,11 +1,10 @@
 ## Getting Started
 
 - **Download VS Code**  
-  Download and install Visual Studio Code from:  
-  https://code.visualstudio.com/download
+Download and install Visual Studio Code from: https://code.visualstudio.com/download
 
 - **Create your HTML file**  
-  Create a new file called `website.html`, then copy and paste the following contents into it:
+Create a new file called `website.html`, then copy and paste the following contents into it:
 
 ```html
 <!DOCTYPE html>
@@ -26,7 +25,7 @@
 ```
 
 - **Add Core Element Styling**  
-  Add the following style block in between the `</body>` and `</html>` tags of your `website.html` file:
+Add the following style block in between the `</body>` and `</html>` tags of your `website.html` file:
 
 ```html
 <style>
@@ -59,7 +58,7 @@
 ```
 
 - **Add Class & ID targeted Styling**  
-  Add the following style definitions **inside** the bottom of the `<style>` block in `website.html`, directly under the `.section-content` definition:
+Add the following style definitions **inside** the bottom of the `<style>` block in `website.html`, directly under the `.section-content` definition:
 
 ```css
 /* Class & ID targeted styling */
@@ -87,7 +86,7 @@
 ```
 
 - **Add JavaScript**  
-  Add the following `<script>` in between the `</style>` and `</html>` tags of your `website.html` file:
+Add the following `<script>` in between the `</style>` and `</html>` tags of your `website.html` file:
 
 ```html
 <script>
@@ -98,7 +97,7 @@
 </script>
 ```
 
-  Also add the following `onclick` attribute to the `<button>` element so it now looks like:
+Also add the following `onclick` attribute to the `<button>` element so it now looks like:
 ```html
 <button onclick="generateRandomBackground()">Click for action</button>
 ```
