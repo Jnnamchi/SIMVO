@@ -101,3 +101,43 @@ Also add the following `onclick` attribute to the `<button>` element so it now l
 ```html
 <button onclick="generateRandomBackground()">Click for action</button>
 ```
+
+- **Make the JS Function Useful**  
+Replace the entire contents of the `<script>` block with the following functions. (Do not delete `<script>` tags):
+
+```js
+// Helper to generate a random hex color
+function randomColor() {
+  return `#${Math.floor(Math.random() * 16777215)
+    .toString(16)
+    .padStart(6, '0')}`;
+}
+
+// Generate a randomized gradient background
+function generateRandomBackground() {
+  const title = document.getElementById('title');
+
+  const c1 = randomColor();
+  const c2 = randomColor();
+  const c3 = randomColor();
+  const c4 = randomColor();
+  const c5 = randomColor();
+  const c6 = randomColor();
+  const c7 = randomColor();
+
+  title.style.background = `
+    radial-gradient(circle at top left, ${c1}, transparent 50%),
+    radial-gradient(circle at top right, ${c2}, transparent 50%),
+    radial-gradient(circle at bottom left, ${c3}, transparent 50%),
+    radial-gradient(circle at bottom right, ${c4}, transparent 50%),
+    linear-gradient(135deg, ${c5}, ${c6}, ${c7})
+  `;
+}
+```
+
+- **Run the JS Function on Page Load**  
+Add the `generateRandomBackground` function call **inside** the bottom of the `<script>` block in `website.html`:
+
+```js
+generateRandomBackground()
+```
