@@ -62,28 +62,28 @@
   Add the following style definitions **inside** the bottom of the `<style>` block in `website.html`, directly under the `.section-content` definition:
 
 ```css
-  /* Class & ID targeted styling */
-  #title {
-    color: white;
-    background:
-      radial-gradient(circle at top left, #ff6ec4, transparent 50%),
-      radial-gradient(circle at top right, #7873f5, transparent 50%),
-      radial-gradient(circle at bottom left, #42e695, transparent 50%),
-      radial-gradient(circle at bottom right, #fddb92, transparent 50%),
-      linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
-  }
+/* Class & ID targeted styling */
+#title {
+  color: white;
+  background:
+    radial-gradient(circle at top left, #ff6ec4, transparent 50%),
+    radial-gradient(circle at top right, #7873f5, transparent 50%),
+    radial-gradient(circle at bottom left, #42e695, transparent 50%),
+    radial-gradient(circle at bottom right, #fddb92, transparent 50%),
+    linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+}
 
-  #title button {
-    border: solid white 1px;
-    color: white;
-    background: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
+#title button {
+  border: solid white 1px;
+  color: white;
+  background: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 
-  #title button:hover {
-    background-color: white;
-    color: #b21f1f;
-  }
+#title button:hover {
+  background-color: white;
+  color: #b21f1f;
+}
 ```
 
 - **Add JavaScript**  
@@ -91,10 +91,10 @@
 
 ```html
 <script>
-    function generateRandomBackground() {
-        message = "Hello!"
-        alert(message)
-    }
+  function generateRandomBackground() {
+    message = "Hello!"
+    alert(message)
+  }
 </script>
 ```
 
