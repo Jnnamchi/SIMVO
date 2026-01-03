@@ -85,3 +85,20 @@
     color: #b21f1f;
   }
 ```
+
+- **Add JavaScript**  
+  Add the following `<script>` in between the `</style>` and `</html>` tags of your `website.html` file:
+
+```js
+<script>
+    function generateRandomBackground() {
+        message = "Hello!"
+        alert(message)
+    }
+</script>
+```
+
+  Also add the following `onclick` attribute to the `<button>` element so it now looks like:
+```html
+<button onclick="generateRandomBackground()">Click for action</button>
+```
