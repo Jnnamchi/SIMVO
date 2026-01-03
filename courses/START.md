@@ -25,7 +25,7 @@ Create a new file called `website.html`, then copy and paste the following conte
 ```
 
 - **Add Core Element Styling**  
-Add the following style block in between the `</body>` and `</html>` tags of your `website.html` file:
+Add the following `<style>` block in between the `</body>` and `</html>` tags of your `website.html` file:
 
 ```html
 <style>
@@ -86,7 +86,7 @@ Add the following style definitions **inside** the bottom of the `<style>` block
 ```
 
 - **Add JavaScript**  
-Add the following `<script>` in between the `</style>` and `</html>` tags of your `website.html` file:
+Add the following `<script>` block in between the `</style>` and `</html>` tags of your `website.html` file:
 
 ```html
 <script>
