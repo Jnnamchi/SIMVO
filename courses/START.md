@@ -116,8 +116,6 @@ function randomColor() {
 
 // Generate a randomized gradient background
 function generateRandomBackground() {
-  const title = document.getElementById('title');
-
   const c1 = randomColor();
   const c2 = randomColor();
   const c3 = randomColor();
@@ -126,6 +124,7 @@ function generateRandomBackground() {
   const c6 = randomColor();
   const c7 = randomColor();
 
+  const title = document.getElementById('title');
   title.style.background = `
     radial-gradient(circle at top left, ${c1}, transparent 50%),
     radial-gradient(circle at top right, ${c2}, transparent 50%),
