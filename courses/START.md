@@ -3,6 +3,8 @@
 - **Download VS Code**  
 Download and install Visual Studio Code from: https://code.visualstudio.com/download
 
+## Website Development
+
 - **Create your HTML file**  
 Create a new file called `website.html`, then copy and paste the following contents into it:
 
@@ -141,3 +143,18 @@ Add the `generateRandomBackground` function call **inside** the bottom of the `<
 ```js
 generateRandomBackground()
 ```
+
+## Network Requests
+
+- **Select an API**  
+Select one of the following APIs of your interest:
+
+Random Facts: https://uselessfacts.jsph.pl/api/v2/facts/random
+Random Excuses: https://excuser-three.vercel.app/v1/excuse
+Random Quotes: https://zenquotes.io/api/random
+Random Bible Verses: https://bible-api.com/data/web/random
+Random Dog Facts: https://dogapi.dog/api/facts?number=1
+Random Cat Facts: https://meowfacts.herokuapp.com/
+Random Pictures of Food: https://foodish-api.com/api/
+Random Startup Idea Generator: https://itsthisforthat.com/api.php?json
+Get Current BitCoin Price: https://api.coinpaprika.com/v1/tickers/btc-bitcoin
