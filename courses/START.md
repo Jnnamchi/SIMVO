@@ -7,7 +7,6 @@ Download and install Visual Studio Code from: https://code.visualstudio.com/down
 Create a new file called `website.html`, then copy and paste the following contents into it:
 
 ```html
-<!DOCTYPE html>
 <html>
 <head>
   <title>John's Website</title>
