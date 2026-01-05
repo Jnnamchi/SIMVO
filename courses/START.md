@@ -8,6 +8,7 @@ Create a new file called `website.html`, then copy and paste the following conte
 
 ```html
 <html>
+
 <head>
   <title>John's Website</title>
 </head>
@@ -20,6 +21,7 @@ Create a new file called `website.html`, then copy and paste the following conte
     </div>
   </div>
 </body>
+
 </html>
 ```
 
