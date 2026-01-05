@@ -43,18 +43,6 @@ Add the following `<style>` block in between the `</body>` and `</html>` tags of
     cursor: pointer;
     border-radius: 15px;
   }
-
-  .section {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .section-content {
-    text-align: center;
-  }
 </style>
 ```
 
@@ -63,6 +51,18 @@ Add the following style definitions **inside** the bottom of the `<style>` block
 
 ```css
 /* Class & ID targeted styling */
+.section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-content {
+  text-align: center;
+}
+
 #title {
   color: white;
   background:
