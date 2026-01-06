@@ -154,7 +154,7 @@ Select one of the following APIs of your interest:
 - Random Quotes: https://zenquotes.io/api/random
 - Random Bible Verses: https://bible-api.com/data/web/random
 - Random Dog Facts: https://dogapi.dog/api/facts?number=1
-- - Random Cat Facts: https://meowfacts.herokuapp.com/
+- Random Cat Facts: https://meowfacts.herokuapp.com/
 - Random Pictures of Food: https://foodish-api.com/api/
 - Random Startup Idea Generator: https://itsthisforthat.com/api.php?json
 - Get Current BitCoin Price: https://api.coinpaprika.com/v1/tickers/btc-bitcoin
