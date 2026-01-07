@@ -213,7 +213,7 @@ async function fetchData() {
 
 Then add this function as an `onclick` attribute to you button, so it runs when you click the button. The final result should look like this:
 ```html
-<button onclick="fetchData()">New Fact</button>
+<button onclick="fetchData()">New Content</button>
 ```
 
 **Run the JS Function on Page Load**  
