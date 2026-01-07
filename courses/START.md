@@ -1,9 +1,9 @@
-## Getting Started
+## 1. Getting Started
 
 - **Download VS Code**  
 Download and install Visual Studio Code from: https://code.visualstudio.com/download
 
-## Website Development
+## 2. Website Development
 
 - **Create your HTML file**  
 Create a new file called `website.html` then copy and paste the following contents into it:
@@ -144,9 +144,9 @@ Add the `generateRandomBackground` function call **inside** the bottom of the `<
 generateRandomBackground()
 ```
 
-## Network Requests
+## 3. Network Requests
 
-- **Select an API**  
+**Select an API**  
 Select one of the following APIs of your interest:
 
 - Random Facts: https://uselessfacts.jsph.pl/api/v2/facts/random
@@ -157,3 +157,101 @@ Select one of the following APIs of your interest:
 - Random Cat Facts: https://meowfacts.herokuapp.com/
 - Random Startup Ideas: https://itsthisforthat.com/api.php?json
 - Get Current BitCoin Price: https://api.coinpaprika.com/v1/tickers/btc-bitcoin
+
+**Add the new my-app section**  
+Add the following html block as a new section in your page, under the title section:
+
+```html
+<div class="section" id="my-app">
+  <div class="section-content">
+    <h1>My App</h1>
+    <p id="my-app-content">App content goes here!</p>
+    <button>New Content</button>
+  </div>
+</div>
+```
+
+**Add CSS for the new my-app section**  
+Add the following css rules to your style sheet, which styles your my-app section:
+
+```css
+/* My App Styles */
+#my-app {
+  color: rgb(128, 83, 66);
+  background: url('https://images.unsplash.com/photo-1499988921418-b7df40ff03f9');
+  background-size: cover;
+}
+
+#my-app button {
+  border: solid rgb(128, 83, 66) 1px;
+  color: rgb(128, 83, 66);
+  background: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#my-app button:hover {
+  background-color: white;
+}
+```
+
+**Add JS for the new my-app section**  
+Add the following js function to your script block, which fetches the data from the URL of your choice:
+
+```js
+// Function to run my app
+async function fetchData() {
+  const url = 'YOUR URL GOES HERE';
+
+  const response = await fetch(url);
+  const data = await response.json();
+
+  const newContent = JSON.stringify(data)
+
+  document.getElementById('my-app-content').textContent = newContent;
+}
+```
+
+Then add this function as an `onclick` attribute to you button, so it runs when you click the button. The final result should look like this:
+```html
+<button onclick="fetchData()">New Fact</button>
+```
+
+**Run the JS Function on Page Load**  
+Finally, add the `fetchData` function call **inside** the bottom of the `<script>` block:
+
+```js
+fetchData()
+```
+
+## 4. Backend Engineering
+
+**Spin up your first server**  
+Create a new file called `server.py` then copy and paste the following contents into it:
+
+```python
+import json
+from http.server import ThreadingHTTPServer, BaseHTTPRequestHandler
+
+class Handler(BaseHTTPRequestHandler):
+    def do_GET(self):
+        if self.path != "/getdata":
+            self.send_response(404)
+            self.end_headers()
+            return
+
+        self.send_response(200)
+        self.end_headers()
+
+        DATA = {
+            "message": "Edit this dictionary",
+            "number": 45
+        }
+
+        self.wfile.write(
+            json.dumps(DATA).encode("utf-8")
+        )
+
+PORT = 8080
+print(f"Serving JSON at http://localhost:{PORT}/getdata")
+ThreadingHTTPServer(("localhost", PORT), Handler).serve_forever()
+```
