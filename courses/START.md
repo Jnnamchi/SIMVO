@@ -239,6 +239,7 @@ class Handler(BaseHTTPRequestHandler):
             return
 
         self.send_response(200)
+        self.send_header("Access-Control-Allow-Origin", "*")
         self.end_headers()
 
         DATA = {
