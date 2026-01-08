@@ -255,3 +255,22 @@ PORT = 8080
 print(f"Serving JSON at http://localhost:{PORT}/getdata")
 ThreadingHTTPServer(("localhost", PORT), Handler).serve_forever()
 ```
+
+**Add a handler to serve your html website**
+Add the following code snippet directly under the do_GET function line. Make sure you indent it correctly:
+
+```python
+# NEW: serve the HTML file at "/"
+if self.path == "/":
+    with open("website.html", "rb") as f:
+        self.send_response(200)
+        self.send_header("Content-Type", "text/html")
+        self.end_headers()
+        self.wfile.write(f.read())
+    return
+```
+
+You can also add the following line under the `PORT = 8080` statement to print out the url:
+```python
+print(f"Serving website.html at http://localhost:{PORT}/")
+```
